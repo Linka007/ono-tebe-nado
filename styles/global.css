@@ -1,14 +1,27 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
+html {
+  height: 3028px; 
   width: 1100px;
-  margin: 0 auto;
-  font-family: Raleway, sans-serif;
+  margin: 0 auto; 
 }
+body {
+  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+}
+
+/* .container {
+  width: 1100px;
+  margin: 0 auto; 
+
+} */
+
+
 
 h1,
 h2,
