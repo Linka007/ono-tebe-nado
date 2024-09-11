@@ -51,8 +51,6 @@
     line-height: 46.96px;
     text-align: left;
 }
-
-
 .about-column .about-text {
     width: 688px;
     height: 120px;
@@ -67,7 +65,6 @@
     color: black;
     z-index: 2;
 }
-
 .about-text .highlight {
     font-family: Raleway;
     font-size: 20px;
@@ -93,9 +90,6 @@
 .about-text .highlight.dio {
     letter-spacing: 0.03em;
 }
-
-
-
 .about-text-two {
     width: 693px;
     height: 168px;
