@@ -1,18 +1,18 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  height: 3028px; 
-  width: 1100px;
-  margin: 0 auto; 
+    height: 3028px;
+    width: 1100px;
+    margin: 0 auto;
 }
 body {
-  overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
+    overflow-x: hidden; /* Отключаем горизонтальную прокрутку */
 }
 
 /* .container {
@@ -20,8 +20,6 @@ body {
   margin: 0 auto; 
 
 } */
-
-
 
 h1,
 h2,
@@ -34,14 +32,14 @@ ul,
 ol,
 li,
 blockquote {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-  color: inherit;
+    color: inherit;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
