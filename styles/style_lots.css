@@ -7,7 +7,6 @@
     gap: 0px;
 }
 
-
 .lots-title {
     position: absolute;
     width: 121px;
@@ -28,7 +27,6 @@
     gap: 0px;
     display: flex;
     justify-content: space-between;
-
 }
 
 .column {
@@ -55,11 +53,13 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* текст на картинках */
-.image-text-one, .image-text-two, .image-text-three {
+.image-text-one,
+.image-text-two,
+.image-text-three {
     position: absolute;
     width: 254px;
     top: 50px; /* Позиционирование относительно .lots */
@@ -73,20 +73,23 @@
     display: inline-block;
 }
 
-.image-text-one span, .image-text-two span, .image-text-three span {
+.image-text-one span,
+.image-text-two span,
+.image-text-three span {
     display: inline-block; /* Чтобы псевдоэлемент не занимал всю ширину */
     position: relative;
-    
 }
 
-.image-text-one span::after, .image-text-two span::after, .image-text-three span::after {
-    content: '';
+.image-text-one span::after,
+.image-text-two span::after,
+.image-text-three span::after {
+    content: "";
     position: absolute;
     left: 0;
-    bottom: 2px; 
+    bottom: 2px;
     width: 100%;
-    height: 1px; 
-    background-color: #ffffff; /
+    height: 1px;
+    background-color: #ffffff;
 }
 
 .text-block-one {
@@ -119,10 +122,10 @@
 
 .text-block-three {
     position: absolute;
-    width: 254px; 
-    height: 264px; 
-    top: 251px; 
-    left: 40px; 
+    width: 254px;
+    height: 264px;
+    top: 251px;
+    left: 40px;
     font-family: Raleway;
     font-size: 20px;
     font-weight: 400;
@@ -137,7 +140,6 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.13em; /* Расстояние между точками */
-
 }
 
 /* more */
@@ -146,24 +148,23 @@
     position: absolute;
     width: 192px;
     height: 25px;
-    top: 667px; 
-    left: 40px; 
+    top: 667px;
+    left: 40px;
     font-family: Raleway;
-    font-size: 20px; 
+    font-size: 20px;
     font-weight: 400;
-    line-height: 23.48px; 
-    color: #000000; 
+    line-height: 23.48px;
+    color: #000000;
     display: inline-block;
     position: relative;
 }
 
 .view-more::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
-    bottom: 0px; 
+    bottom: 0px;
     width: 100%;
-    height: 1px; 
-    background-color: #000000; 
+    height: 1px;
+    background-color: #000000;
 }
-
