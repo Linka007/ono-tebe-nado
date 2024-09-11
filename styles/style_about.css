@@ -16,7 +16,7 @@
     top: 35px;
     left: 47px;
     border-radius: 50%; /* Создание эллипса */
-    background-color: rgb(0, 0, 0); 
+    background-color: rgb(0, 0, 0);
     overflow: hidden;
     z-index: 2;
 }
@@ -51,6 +51,7 @@
     line-height: 46.96px;
     text-align: left;
 }
+
 .about-column .about-text {
     width: 688px;
     height: 120px;
@@ -65,6 +66,7 @@
     color: black;
     z-index: 2;
 }
+
 .about-text .highlight {
     font-family: Raleway;
     font-size: 20px;
@@ -90,6 +92,7 @@
 .about-text .highlight.dio {
     letter-spacing: 0.03em;
 }
+
 .about-text-two {
     width: 693px;
     height: 168px;
@@ -119,4 +122,3 @@
 .about-text-two .highlight.unluck {
     letter-spacing: 0.01em;
 }
-
