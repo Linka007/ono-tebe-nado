@@ -22,7 +22,7 @@
 .menu {
     display: flex;
     justify-content: space-between; /* Распределяет элементы по краям */
-    align-items: center; 
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -31,31 +31,29 @@
     /* background-color: rgb(255, 77, 0);  */
 }
 
-
 .menu li {
     position: relative;
-
 }
 
 .menu a {
-    text-decoration: none; 
-    color: #000000; 
-    padding: 5px 0; 
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0;
     display: inline-block;
-    font-family: Raleway; 
-    font-size: 18px; 
+    font-family: Raleway;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 21.13px; 
-    letter-spacing: 0.01em; 
-    text-align: left; 
+    line-height: 21.13px;
+    letter-spacing: 0.01em;
+    text-align: left;
 }
 
 /* кружок */
 .menu li.about::before,
 .menu li.service::before {
-    content: '';
+    content: "";
     position: absolute;
-    left: -15px; 
+    left: -15px;
     top: 50%;
     width: 7px;
     height: 7px;
@@ -67,34 +65,33 @@
 /* линия под текстом */
 .menu li.about::after,
 .menu li.service::after {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0; 
-    bottom: 4px; 
-    width: 100%; 
+    left: 0;
+    bottom: 4px;
+    width: 100%;
     height: 1px;
     background-color: #000;
 }
 
 .info {
-    position: absolute; 
-    left: 454px; 
+    position: absolute;
+    left: 454px;
     bottom: -4px;
 }
 
 .header-image {
-    width: 148px; 
-    height: 105px; 
+    width: 148px;
+    height: 105px;
 }
 
 .contact {
-    position: relative; 
-    width: 240.52px; 
-    height: 98px; 
-    margin-top: 5px; 
-    left: 786px; 
+    position: relative;
+    width: 240.52px;
+    height: 98px;
+    margin-top: 5px;
+    left: 786px;
     /* background-color: red; */
-
 }
 
 .nav_contact {
@@ -103,7 +100,7 @@
 }
 
 .menu_contact {
-    list-style: none; 
+    list-style: none;
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -114,32 +111,32 @@
 }
 
 .menu_contact li {
-    margin-bottom: 0; 
+    margin-bottom: 0;
     position: relative;
-    font-family: Raleway; 
-    font-size: 18px; 
-    font-weight: 400; 
-    line-height: 24.3px; 
-    letter-spacing: 0.01em; 
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0.01em;
     text-align: left;
-    color: #000000; 
+    color: #000000;
 }
 
 .menu_contact li.phone,
 .menu_contact li.mail {
-    display: inline; 
+    display: inline;
     position: relative;
 }
 
 .menu_contact li.phone::after,
 .menu_contact li.mail::after {
-    content: '';
+    content: "";
     position: absolute;
-    left: 0; 
-    bottom: -2px; 
-    width: 100%; 
+    left: 0;
+    bottom: -2px;
+    width: 100%;
     height: 1px;
     background-color: #000;
-    display: block; 
+    display: block;
     box-sizing: border-box; /* Для точного расчета ширины */
 }
