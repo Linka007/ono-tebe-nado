@@ -1,19 +1,16 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('./Raleway-Regular.woff2') format('woff2'),
-         url('./Raleway-Regular.woff') format('woff');
+    font-family: "Raleway";
+    src: url("./Raleway-Regular.woff2") format("woff2"), url("./Raleway-Regular.woff") format("woff");
     font-weight: normal;
     font-display: swap;
-  }
-  
-  @font-face {
-    font-family: 'Raleway';
-    src: url('./Raleway-Bold.woff2') format('woff2'),
-         url('./Raleway-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("./Raleway-Bold.woff2") format("woff2"), url("./Raleway-Bold.woff") format("woff");
     font-weight: bold;
     font-display: swap;
-  }
-
+}
 
 main {
     /* background-color: green; */
@@ -26,9 +23,8 @@ main {
     height: 757px;
     top: 95px; /* Отступ относительно родителского элемента header */
     gap: 0px;
-    opacity: 1; 
-    overflow: hidden; 
-    
+    opacity: 1;
+    overflow: hidden;
 }
 
 .jumbotron .background-image {
@@ -65,135 +61,134 @@ main {
 /* Контейнер для заголовка */
 .title {
     position: relative;
-    width: 1000px;  
-    height: 355px;  
-    top: 165px;     
-    left: 50px;     
-    gap: 0px;       
-    opacity: 1;     
+    width: 1000px;
+    height: 355px;
+    top: 165px;
+    left: 50px;
+    gap: 0px;
+    opacity: 1;
 }
 
 .title-block {
     position: absolute;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-size: 100px;
     font-weight: 700;
     line-height: 115px; /* для первого блока 115px, для остальных 100px */
     color: #fff;
 }
-  
+
 .block1 {
-    top: 0;         
-    left: 0;        
-    width: 316px;   
-    height: 115px;  
+    top: 0;
+    left: 0;
+    width: 316px;
+    height: 115px;
     letter-spacing: 0.3em;
 }
-  
-  /* Для span(НО) внутри блока 1 */
+
+/* Для span(НО) внутри блока 1 */
 .block1 .highlight {
     letter-spacing: 0.6em;
 }
-  
-  /* Позиционирование блока 2 */
+
+/* Позиционирование блока 2 */
 .block2 {
-    top: 135px;     
-    left: 285px;   
+    top: 135px;
+    left: 285px;
     width: auto;
     letter-spacing: 0.3em;
     line-height: 100px;
 }
-  
-  /* Для span(БЕ) внутри блока 2 */
-  .block2 .highlight {
+
+/* Для span(БЕ) внутри блока 2 */
+.block2 .highlight {
     letter-spacing: 0.6em;
 }
-  
-  /* Позиционирование блока 3 */
+
+/* Позиционирование блока 3 */
 .block3 {
-    bottom: 0;    
-    right: 0;     
+    bottom: 0;
+    right: 0;
     text-align: right;
     width: auto;
     letter-spacing: 0.6em;
     line-height: 100px;
 }
-  
-  /* Для span(АД) внутри блока 3 */
+
+/* Для span(АД) внутри блока 3 */
 .block3 .highlight-ad {
     letter-spacing: 0.3em;
 }
-  
-  /* Для span(О) внутри блока 3 */
+
+/* Для span(О) внутри блока 3 */
 .block3 .highlight-o {
     letter-spacing: normal;
 }
-
 
 /* subline */
 
 .subline {
     position: absolute;
-    top: 667px;        
-    left: 78px;        
-    width: 637px;      
-    height: 28px;      
-    font-family: 'Raleway';
+    top: 667px;
+    left: 78px;
+    width: 637px;
+    height: 28px;
+    font-family: "Raleway";
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-    
-    color: #ffffff;       
+
+    color: #ffffff;
 }
-  
+
 /* Стиль для пробелов letter-spacing */
 .subline .whitespace_one {
-    letter-spacing: 0.9em;  /* Пробелы между словами */
+    letter-spacing: 0.9em; /* Пробелы между словами */
 }
 
 .subline .whitespace_two {
-    letter-spacing: 0.8em;  /* Пробелы между словами */
+    letter-spacing: 0.8em; /* Пробелы между словами */
 }
-  
+
 /* Стиль для букв в */
 .subline .v {
-    letter-spacing: 1.1em;  /* Межбуквенное расстояние для "в" */
+    letter-spacing: 1.1em; /* Межбуквенное расстояние для "в" */
 }
-  
+
 /* button */
 
 .button {
     position: absolute;
-    top: 655px;            
-    left: 794px;           
-    width: 256px;          
-    height: 51px;          
+    top: 655px;
+    left: 794px;
+    width: 256px;
+    height: 51px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff; 
-    background-color: transparent; /* Прозрачный фон */     
-    text-decoration: none; 
+    border: 1px solid #fff;
+    background-color: transparent; /* Прозрачный фон */
+    text-decoration: none;
 }
-  
+
 .button-text {
-    width: 193px;          
-    height: 28px;         
-    font-family: 'Raleway';
-    font-size: 22px;      
-    font-weight: 500;     
-    line-height: 25.83px;  
-    text-align: center;    
-    color: #ffffff;      
+    width: 193px;
+    height: 28px;
+    font-family: "Raleway";
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 25.83px;
+    text-align: center;
+    color: #ffffff;
 }
-  
+
 .button:hover {
-    background-color: #fff;          
+    background-color: #fff;
 }
 
 .button:hover .button-text {
-    color: #000;          
+    color: #000;
 }
-  
+
   
