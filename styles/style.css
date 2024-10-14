@@ -1,8 +1,7 @@
 /* стили для header */
 
 .main-header {
-    width: 1052px;
-    height: 105px;
+    width: 1052px; 
     margin-top: 92px; /* Отступ сверху */
     margin-left: 24px; /* Отступ слева */
     display: flex;
@@ -14,7 +13,7 @@
 }
 
 .navigation {
-    position: absolute;
+    display: flex;
     top: 44px;
     left: 26.52px;
 }
@@ -27,8 +26,6 @@
     padding: 0;
     margin: 0;
     width: 391.48px;
-    height: 22px;
-    /* background-color: rgb(255, 77, 0);  */
 }
 
 .menu li {
@@ -40,7 +37,7 @@
     color: #000000;
     padding: 5px 0;
     display: inline-block;
-    font-family: Raleway;
+    font-family: Raleway,Arial;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
@@ -49,8 +46,7 @@
 }
 
 /* кружок */
-.menu li.about::before,
-.menu li.service::before {
+.menu li:not(:first-child)::before {
     content: "";
     position: absolute;
     left: -15px;
@@ -63,8 +59,7 @@
 }
 
 /* линия под текстом */
-.menu li.about::after,
-.menu li.service::after {
+.menu li:not(:first-child)::after {
     content: "";
     position: absolute;
     left: 0;
@@ -88,15 +83,8 @@
 .contact {
     position: relative;
     width: 240.52px;
-    height: 98px;
     margin-top: 5px;
-    left: 786px;
     /* background-color: red; */
-}
-
-.nav_contact {
-    margin: 0;
-    padding: 0;
 }
 
 .menu_contact {
@@ -113,7 +101,7 @@
 .menu_contact li {
     margin-bottom: 0;
     position: relative;
-    font-family: Raleway;
+    font-family: Raleway,Arial;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
@@ -140,57 +128,33 @@
     display: block;
     box-sizing: border-box; /* Для точного расчета ширины */
 }
-@font-face {
-    font-family: "Raleway";
-    src: url("./Raleway-Regular.woff2") format("woff2"), url("./Raleway-Regular.woff") format("woff");
-    font-weight: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Raleway";
-    src: url("./Raleway-Bold.woff2") format("woff2"), url("./Raleway-Bold.woff") format("woff");
-    font-weight: bold;
-    font-display: swap;
-}
 
 main {
-    /* background-color: green; */
     width: 1100px;
-    height: 2465px;
-}
-.jumbotron {
-    position: relative;
-    width: 1100px;
-    height: 757px;
-    top: 95px; /* Отступ относительно родителского элемента header */
-    gap: 0px;
-    opacity: 1;
-    overflow: hidden;
+    margin-top: 92px; /* Отступ сверху для расстояния между блоками */
 }
 
-.jumbotron .background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+.jumbotron {
+    background-image: url(../images/cover.jpg);
+    padding: 95px 179px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 757px;
+    background-size: cover;
+    position: relative;
 }
 
 /* Наложение */
-.jumbotron .overlay {
-    position: absolute;
+.overlay {
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Наложение с opacity 0.6 */
+    background-color: rgba(0.6);
     z-index: 2;
+    position:absolute;
 }
 
-/* Контент */
 .jumbotron .content {
     position: absolute;
     top: 0;
@@ -200,104 +164,70 @@ main {
     z-index: 3;
 }
 
-/* Контейнер для заголовка */
-.title {
-    position: relative;
-    width: 1000px;
-    height: 355px;
-    top: 165px;
-    left: 50px;
-    gap: 0px;
-    opacity: 1;
-}
-
-.title-block {
-    position: absolute;
-    font-family: "Raleway";
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 115px; /* для первого блока 115px, для остальных 100px */
-    color: #fff;
-}
-
-.block1 {
-    top: 0;
-    left: 0;
-    width: 316px;
-    height: 115px;
-    letter-spacing: 0.3em;
-}
-
-/* Для span(НО) внутри блока 1 */
-.block1 .highlight {
-    letter-spacing: 0.6em;
-}
-
-/* Позиционирование блока 2 */
-.block2 {
-    top: 135px;
-    left: 285px;
-    width: auto;
-    letter-spacing: 0.3em;
-    line-height: 100px;
-}
-
-/* Для span(БЕ) внутри блока 2 */
-.block2 .highlight {
-    letter-spacing: 0.6em;
-}
-
-/* Позиционирование блока 3 */
-.block3 {
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    width: auto;
-    letter-spacing: 0.6em;
-    line-height: 100px;
-}
-
-/* Для span(АД) внутри блока 3 */
-.block3 .highlight-ad {
-    letter-spacing: 0.3em;
-}
-
-/* Для span(О) внутри блока 3 */
-.block3 .highlight-o {
-    letter-spacing: normal;
-}
-
-/* subline */
-
 .subline {
     position: absolute;
     top: 667px;
     left: 78px;
     width: 637px;
-    height: 28px;
-    font-family: "Raleway";
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
     text-align: left;
-
     color: #ffffff;
+    z-index: 3;
 }
 
-/* Стиль для пробелов letter-spacing */
-.subline .whitespace_one {
-    letter-spacing: 0.9em; /* Пробелы между словами */
-}
+.jumbotron {
+    padding: 165px 50px 50px;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
+    width: 1100px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+  }
 
-.subline .whitespace_two {
-    letter-spacing: 0.8em; /* Пробелы между словами */
-}
-
-/* Стиль для букв в */
-.subline .v {
-    letter-spacing: 1.1em; /* Межбуквенное расстояние для "в" */
-}
-
+.title {
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+  }
+  
+.letspace {
+    letter-spacing: 0.6em;
+  }
+  
+.letblock {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+.text-center {
+    text-align: center;
+  }
+  
+.text-right {
+    text-align: right;
+    margin-bottom: 0;
+  }
+  
+.smallspace {
+    letter-spacing: 30px;
+  }
+  
+.no-letter-spacing {
+    letter-spacing: 0;
+  }
+  
 /* button */
 
 .button {
@@ -306,76 +236,49 @@ main {
     left: 794px;
     width: 256px;
     height: 51px;
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
     background-color: transparent; /* Прозрачный фон */
     text-decoration: none;
+    z-index: 3;
 }
 
-.button-text {
-    width: 193px;
-    height: 28px;
-    font-family: "Raleway";
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 25.83px;
-    text-align: center;
-    color: #ffffff;
-}
-
-.button:hover {
-    background-color: #fff;
-}
-
-.button:hover .button-text {
-    color: #000;
-}
 footer {
     width: 1000px;
     height: 98px;
-    position: absolute;
-    top: 2842px;
+    position: relative;
+    top: 500px;
+    padding-bottom: 168px;
     margin-left: 50px;
     z-index: 1;
     display: flex;
-    flex-direction: column; /* Располагаем элементы в колонку */
-    align-items: center; /* Центрирование по горизонтали */
-    /* justify-content: center; */
-    /* background-color: blueviolet; */
+    flex-direction: column; 
+    align-items: center; 
+   
 }
 
 footer .contact {
     position: absolute;
     width: 240.52px;
-    height: 98px;
     left: 0px;
     top: -5px;
 }
 
-footer .text-center,
-footer .see_lots,
-footer .see_about {
-    font-family: Raleway;
+.underline {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer .text-center {
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
     text-align: center;
-    margin: 0px 0;
-    top: 0px;
     position: relative;
-}
-
-footer .see_lots::after,
-footer .see_about::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 1px;
-    background-color: #000;
 }
 
 footer .social {
@@ -392,19 +295,17 @@ footer .social img {
     width: 48px;
     height: 48px;
 }
+
 .lots {
-    position: absolute;
+    position:relative;
     width: 1052px;
     height: 692px;
-    top: 1229px;
-    margin-left: 24px;
-    gap: 0px;
+    top: 179px;
+    left:24px;     
 }
 
 .lots-title {
-    position: absolute;
     width: 121px;
-    height: 47px;
     left: 40px; /* Расположение текста относительно левого края */
     top: 0px; /* Текст будет выравнен по верхнему краю внутри блока lots */
     font-family: Raleway;
@@ -415,6 +316,41 @@ footer .social img {
 }
 
 .lots-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-top: 27px;
+    list-style: none;
+  }
+
+  .overlay {
+    inset: 0;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(0 0 0/0.6);
+  }
+
+  .lots {
+    position:relative;
+    width: 1052px;
+    height: 692px;
+    left: 24px;
+}
+
+.lots__heading {
+    position: relative;
+    width: 121px;
+    height: 47px;
+    left: 40px; 
+    top: 0px; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+}
+
+.lots__card-list  {
     position: absolute;
     top: 74px;
     width: 100%;
@@ -423,153 +359,152 @@ footer .social img {
     justify-content: space-between;
 }
 
-.column {
+.lots__card-list-item {
+    display: inline-flex;
+    margin-right: 20px; 
+}
+
+.card {
+    width: 334px; 
+    height: 563px; 
     position: relative;
-    width: 334px;
-    height: 563px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; 
 }
 
-.image-container {
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.column-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-/* текст на картинках */
-.image-text-one,
-.image-text-two,
-.image-text-three {
-    position: absolute;
     width: 254px;
-    top: 50px; /* Позиционирование относительно .lots */
-    left: 40px; /* Позиционирование относительно .lots */
-    font-family: Raleway;
+    top: 50px; 
+    left: 40px; 
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 26.4px;
     text-align: left;
     color: white;
     display: inline-block;
+    text-decoration: underline;
+    z-index: 3;
 }
 
-.image-text-one span,
-.image-text-two span,
-.image-text-three span {
-    display: inline-block; /* Чтобы псевдоэлемент не занимал всю ширину */
-    position: relative;
-}
-
-.image-text-one span::after,
-.image-text-two span::after,
-.image-text-three span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    width: 100%;
-    height: 1px;
-    background-color: #ffffff;
-}
-
-.text-block-one {
-    position: absolute;
-    width: 254px;
-    height: 144px;
-    top: 371px; /* Позиционирование относительно контейнера */
-    left: 40px; /* Позиционирование относительно контейнера */
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: white;
-}
-
-.text-block-two {
+.card__text {
     position: absolute;
     width: 254px;
     height: 360px;
-    top: 155px; /* Позиционирование относительно контейнера */
-    left: 40px; /* Позиционирование относительно контейнера */
-    font-family: Raleway;
+    top: 155px; 
+    left: 40px; 
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
     color: white;
+    z-index: 3;
 }
 
-.text-block-three {
-    position: absolute;
-    width: 254px;
-    height: 264px;
+.first {
+    top: 371px; 
+}
+.third {
     top: 251px;
-    left: 40px;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: white;
 }
-
-.column .text-block-three .dot {
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.13em; /* Расстояние между точками */
-}
-
-/* more */
-
-.view-more {
-    position: absolute;
-    width: 192px;
-    height: 25px;
-    top: 667px;
-    left: 40px;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 23.48px;
-    color: #000000;
+.lots__look-more-link {
+    margin-left: 40px;
+    margin-top: 620px;
     display: inline-block;
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: #000;
 }
 
-.view-more::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    height: 1px;
-    background-color: #000000;
+.about {
+    padding: 180px 50px;
+    width: 693px;
+    top: 321px;
+    display: grid;
+    position: relative;
+    grid-template-columns: 430px 1fr;
+    gap: 25px;
 }
+
+.about__column  {
+    width: 693px;
+    height: 449px;
+    position: absolute;
+    top: 133px;
+    left: 359px;
+    z-index: 2;
+}
+
+.about__logo {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+.about__logo-image {
+    object-fit: contain;
+    object-position: top;
+    width: 148px;
+  }
+  
+.about__title {
+    width: 291px;
+    height: 47px;
+    margin-top: 3px;
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46.96px;
+    text-align: left;
+}
+
+.about__text {
+    width: 688px;
+    height: 120px;
+    position: absolute;
+    top: 150px;
+    font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: black;
+    z-index: 2;
+}
+.dva {
+    top: 294px;
+}
+
 .about_main {
     width: 1052px;
-    height: 595px;
     position: absolute;
     top: 2067px;
     margin-left: 24px;
     gap: 0px;
     z-index: 1;
-    /* background-color: rgb(255, 0, 217); */
 }
 
 .logo-column {
@@ -595,95 +530,11 @@ footer .social img {
     z-index: 3;
 }
 
-.about-column {
-    width: 693px;
-    height: 449px;
-    position: absolute;
-    top: 133px;
-    left: 359px;
-    z-index: 2;
+.content-section{
+    width: 1052px;
+    height: 595px;
+    position: relative;
+    margin-left: 24px;
+    gap: 0px;
+    z-index: 1;
 }
-
-.about-column p {
-    width: 291px;
-    height: 47px;
-    margin-top: 3px;
-    font-family: Raleway;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 46.96px;
-    text-align: left;
-}
-
-.about-column .about-text {
-    width: 688px;
-    height: 120px;
-    position: absolute;
-    top: 150px;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    color: black;
-    z-index: 2;
-}
-
-.about-text .highlight {
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    /* display: block;
-    margin-bottom: 30px;   */
-}
-
-/* .about-text .highlight.phaph {
-   
-} */
-
-.about-text .highlight.our {
-    letter-spacing: 0.02em;
-}
-
-.about-text .highlight.was {
-    letter-spacing: -0.01em;
-}
-
-.about-text .highlight.dio {
-    letter-spacing: 0.03em;
-}
-
-.about-text-two {
-    width: 693px;
-    height: 168px;
-    position: absolute;
-    top: 294px;
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: black;
-    z-index: 2;
-}
-
-.about-text-two .highlight {
-    font-family: Raleway;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-}
-
-.about-text-two .highlight.they {
-    letter-spacing: 0.04em;
-}
-
-.about-text-two .highlight.unluck {
-    letter-spacing: 0.01em;
-}
-
-  
