@@ -1,15 +1,18 @@
 /* стили для header */
 
 .main-header {
-    width: 1052px; 
-    margin-top: 92px; /* Отступ сверху */
-    margin-left: 24px; /* Отступ слева */
+    width: 1052px;
+    margin-top: 92px;
+    /* Отступ сверху */
+    margin-left: 24px;
+    /* Отступ слева */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     /* background-color: blue; */
-    box-sizing: border-box; /* Учитывает границы и отступы в ширине и высоте */
+    box-sizing: border-box;
+    /* Учитывает границы и отступы в ширине и высоте */
 }
 
 .navigation {
@@ -20,12 +23,14 @@
 
 .menu {
     display: flex;
-    justify-content: space-between; /* Распределяет элементы по краям */
+    justify-content: space-between;
+    /* Распределяет элементы по краям */
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 391.48px;
+    /* background-color: rgb(255, 77, 0);  */
 }
 
 .menu li {
@@ -37,7 +42,7 @@
     color: #000000;
     padding: 5px 0;
     display: inline-block;
-    font-family: Raleway,Arial;
+    font-family: Raleway, Arial;
     font-size: 18px;
     font-weight: 400;
     line-height: 21.13px;
@@ -95,13 +100,14 @@
 }
 
 .menu_contact li a {
-    text-decoration: none; /* Убирает стандартное подчеркивание ссылок */
+    text-decoration: none;
+    /* Убирает стандартное подчеркивание ссылок */
 }
 
 .menu_contact li {
     margin-bottom: 0;
     position: relative;
-    font-family: Raleway,Arial;
+    font-family: Raleway, Arial;
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
@@ -126,12 +132,14 @@
     height: 1px;
     background-color: #000;
     display: block;
-    box-sizing: border-box; /* Для точного расчета ширины */
+    box-sizing: border-box;
+    /* Для точного расчета ширины */
 }
 
 main {
     width: 1100px;
-    margin-top: 92px; /* Отступ сверху для расстояния между блоками */
+    margin-top: 92px;
+    /* Отступ сверху для расстояния между блоками */
 }
 
 .jumbotron .content {
@@ -168,7 +176,7 @@ main {
     color: #fff;
     text-transform: uppercase;
     position: relative;
-  }
+}
 
 .title {
     font-size: 100px;
@@ -180,34 +188,34 @@ main {
     text-transform: uppercase;
     position: relative;
     z-index: 2;
-  }
-  
+}
+
 .letspace {
     letter-spacing: 0.6em;
-  }
-  
+}
+
 .letblock {
     display: block;
     margin-bottom: 8px;
-  }
-  
+}
+
 .text-center {
     text-align: center;
-  }
-  
+}
+
 .text-right {
     text-align: right;
     margin-bottom: 0;
-  }
-  
+}
+
 .smallspace {
     letter-spacing: 30px;
-  }
-  
+}
+
 .no-letter-spacing {
     letter-spacing: 0;
-  }
-  
+}
+
 /* button */
 
 .button {
@@ -221,7 +229,8 @@ main {
     justify-content: center;
     align-items: center;
     border: 1px solid #fff;
-    background-color: transparent; /* Прозрачный фон */
+    background-color: transparent;
+    /* Прозрачный фон */
     text-decoration: none;
     z-index: 3;
 }
@@ -235,8 +244,8 @@ footer {
     margin-left: 50px;
     z-index: 1;
     display: flex;
-    flex-direction: column; 
-    align-items: center;   
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .contact {
@@ -267,7 +276,8 @@ footer .social {
     right: 0;
     display: flex;
     align-items: center;
-    gap: 48px; /* Отступы между картинками */
+    gap: 48px;
+    /* Отступы между картинками */
 }
 
 footer .social img {
@@ -275,18 +285,12 @@ footer .social img {
     height: 48px;
 }
 
-.lots {
-    position:relative;
-    width: 1052px;
-    height: 692px;
-    top: 179px;
-    left:24px;     
-}
-
 .lots-title {
     width: 121px;
-    left: 40px; /* Расположение текста относительно левого края */
-    top: 0px; /* Текст будет выравнен по верхнему краю внутри блока lots */
+    left: 40px;
+    /* Расположение текста относительно левого края */
+    top: 0px;
+    /* Текст будет выравнен по верхнему краю внутри блока lots */
     font-family: Raleway;
     font-size: 40px;
     font-weight: 700;
@@ -300,21 +304,29 @@ footer .social img {
     gap: 25px;
     padding-top: 27px;
     list-style: none;
-  }
+}
 
-  .overlay {
+.overlay {
     inset: 0;
     position: absolute;
     z-index: 1;
     background-color: rgb(0 0 0/0.6);
-  }
+}
+
+.lots {
+    position: relative;
+    width: 1052px;
+    height: 692px;
+    top: 179px;
+    left: 24px;
+}
 
 .lots__heading {
     position: relative;
     width: 121px;
     height: 47px;
-    left: 40px; 
-    top: 0px; 
+    left: 40px;
+    top: 0px;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     font-weight: 700;
@@ -322,7 +334,7 @@ footer .social img {
     text-align: left;
 }
 
-.lots__card-list  {
+.lots__card-list {
     position: absolute;
     top: 74px;
     width: 100%;
@@ -333,19 +345,19 @@ footer .social img {
 
 .lots__card-list-item {
     display: inline-flex;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .card {
-    width: 334px; 
-    height: 563px; 
+    width: 334px;
+    height: 563px;
     position: relative;
     background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .card_type_film {
@@ -363,8 +375,8 @@ footer .social img {
 .card__title {
     position: relative;
     width: 254px;
-    top: 50px; 
-    left: 40px; 
+    top: 50px;
+    left: 40px;
     font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     font-size: 22px;
     font-weight: 700;
@@ -380,8 +392,8 @@ footer .social img {
     position: absolute;
     width: 254px;
     height: 360px;
-    top: 155px; 
-    left: 40px; 
+    top: 155px;
+    left: 40px;
     font-family: "Raleway", Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
     font-weight: 400;
@@ -392,7 +404,7 @@ footer .social img {
 }
 
 .first {
-    top: 371px; 
+    top: 371px;
 }
 
 .third {
@@ -435,14 +447,14 @@ footer .social img {
     height: 240px;
     background-color: #000;
     border-radius: 50%;
-  }
-  
+}
+
 .about__logo-image {
     object-fit: contain;
     object-position: top;
     width: 148px;
-  }
-  
+}
+
 .about__title {
     width: 291px;
     height: 47px;
@@ -488,7 +500,8 @@ footer .social img {
     position: absolute;
     top: 35px;
     left: 47px;
-    border-radius: 50%; /* Создание эллипса */
+    border-radius: 50%;
+    /* Создание эллипса */
     background-color: rgb(0, 0, 0);
     overflow: hidden;
     z-index: 2;
@@ -512,4 +525,6 @@ footer .social img {
     margin-left: 24px;
     gap: 0px;
     z-index: 1;
+    /* background-color: rgb(255, 0, 217); */
+
 }
